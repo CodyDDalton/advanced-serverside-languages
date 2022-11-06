@@ -15,7 +15,6 @@ router.post('/', productCtrl.create)
 //update existing post by id
 router.post('/:id', productCtrl.update)
 //delete existing post by id
-router.delete('/:id', productCtrl.remove)
 router.post('/:id/delete', productCtrl.remove)
 
 module.exports = router
