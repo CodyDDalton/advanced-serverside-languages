@@ -1,0 +1,6 @@
+{% extends 'layouts/base.twig' %}
+
+{% block main_content %}
+    {% include 'views/variants/_form.twig' with { 'variant': variant, 'products': products } %}
+    <a href="/variants/{{ variant.id }}/edit">Edit</a> | <a href="/variants/{{ variant.id }}">Delete</a>
+{% endblock %}
