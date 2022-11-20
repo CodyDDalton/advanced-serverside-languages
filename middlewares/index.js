@@ -3,7 +3,7 @@ const util = require('util')
 const path = require('path')
 
 //Load in our Image Sequelize model
-const { Image } = require('.../models')
+const { Image } = require('../models')
 
 //Defines the Express middleware that will upload our image
 const uploadImage = async (req, res, next) => {

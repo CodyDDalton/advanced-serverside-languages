@@ -8,6 +8,7 @@ router.get('/', productCtrl.index)
 router.get('/new', productCtrl.form)
 //show one product of ID
 router.get('/:id', productCtrl.show)
+router.get('/:id/:slug', productCtrl.show)
 // edit form of id
 router.get('/:id/edit', productCtrl.form)
 //post to endpoint

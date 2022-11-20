@@ -1,0 +1,88 @@
+form{
+    background-color:blue;
+    margin:25%;
+}
+html{
+    text-align:center;
+    background-color: black;
+    color:darkorange;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.banner{
+    display:flex;
+    flex-direction: column;
+    margin:0%;
+}
+.bannerTitle{
+    font-size: 48px;
+    color:orangered;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin-left:30%;
+    margin-right:30%; */
+    margin-top:2%;
+    margin-bottom:2%;
+}
+hr{
+    margin-bottom:'10%';
+    border-style:ridge;
+    border-radius:20%;
+    border-color:darkorange;
+}
+a{
+    color:darkorange;
+    text-decoration: none;
+    
+}
+.pageTitle{
+    margin-top:2%;
+    margin-bottom:5%;
+}
+
+a:hover{
+    color:orange;
+}
+
+a:visited{
+    color:orangered;
+}
+
+.product{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-style:ridge;
+    align-items: center;
+    border-color: orangered;
+    border-radius:25px;
+    padding:25px;
+    background-color: black;
+    min-width: 150px;
+    max-width: 150px;
+}
+.product:hover{
+    background-color: orangered;
+    color:black;
+}
+
+.productContainer{
+    display:flex;
+    flex-direction: row;
+    margin-left:25%;
+    margin-right:25%;
+    margin-bottom:5%;
+    justify-content: space-evenly;
+}
+
+footer{
+    position:fixed;
+    margin-right:auto;
+    margin-top:5%;
+    height:150px;
+    margin-bottom:0px;
+    width:100%;
+}

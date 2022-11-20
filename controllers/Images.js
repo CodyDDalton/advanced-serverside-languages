@@ -34,7 +34,7 @@ const create = async (req, res, next) => {
 
 const update = async (req, res, next) => {
     const image = await Image.update(req.body, { 
-        where: { id: req.params.id }
+        where: { id: Number(req.params.id) }
     })
     // Sets a pretext of "imageId" for our upload middleware
     req.imageId = req.params.id
