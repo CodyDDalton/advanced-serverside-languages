@@ -1,38 +1,25 @@
 {% extends 'layouts/base.twig' %}
 
 {% block main_content %}
-    <h2>About {{ variant.title }}</h2>
-    <ul>
-        <li>
-            <label>Id: </label> 
-            {{ variant.id }}
-        </li>
-        <li>
-            <label>Title: </label> 
-            {{ variant.title }}
-        </li>
-        <li>
-            <label>Slug: </label> 
-            {{ variant.slug }}
-        </li>
-        <li>
-            <label>Description: </label> 
-            {{ variant.description }}
-        </li>
-        <li>
-            <label>Price: </label> 
-            {{ variant.price }}
-        </li>
-        <li>
-            <label>Inventory: </label> 
-            {{ variant.inventory }}
-        </li>
-         <li>
-            <label>Product: </label> 
-            {{ product.title }}
-        </li>
-    </ul>
+    <h1>{{ variant.title }}</h2>
+    <div>
+        <div>
+            <p>${{ variant.price }}</p>
+        </div>
+        <p>{{ variant.description }}</p>
+    </div>
+    <h3>Other Variations</h3>
+    <div class="variantGallery">
+        {% for variant in variants %}
+            <div class="variantChoice">
+                <h3>{{variant.title}}</h3>
+                <hr></hr>
+                <p class="variantPrice">${{variant.price}}</p>
+            </div>
+        {% endfor %}
+    </div>
     <p>
-        <a href="/variants/{{ variant.id }}/edit">Edit</a> | <a href="/variants/{{ variant.id }}/delete">Delete</a>
+        <a href="/variants/{{ variant.productId }}/{{variant.slug}}/edit">Edit</a> | <a href="/variants/{{variant.id }}/delete">Delete</a>
     </p>
+{% endblock %}
 {% endblock %}

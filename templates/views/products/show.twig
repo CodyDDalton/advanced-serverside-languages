@@ -4,13 +4,21 @@
     <h1>{{ product.title }}</h2>
     <div>
         <div>
-            <img />
             <p>${{ product.price }}</p>
         </div>
         <p>{{ product.description }}</p>
     </div>
-    <a href="/variants"><h3>Available Variations</h3></a>   
+    <a href="/variants"><h3>Available Variations</h3></a>
+    <div class="variantGallery">
+        {% for variant in variants %}
+            <div class="variantChoice">
+                <h3>{{variant.title}}</h3>
+                <hr></hr>
+                <p class="variantPrice">${{variant.price}}</p>
+            </div>
+        {% endfor %}
+    </div>
     <p>
-        <a href="/products/{{ product.id }}/edit">Edit</a> | <a href="/products/{{ product.id }}/delete">Delete</a>
+        <a href="/products/{{ product.id }}/{{product.slug}}/edit">Edit</a> | <a href="/products/{{ product.id }}/delete">Delete</a>
     </p>
 {% endblock %}

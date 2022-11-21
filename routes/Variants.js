@@ -8,8 +8,10 @@ router.get('/', variantCtrl.index)
 router.get('/new', variantCtrl.form)
 //show one product of ID
 router.get('/:id', variantCtrl.show)
+router.get('/:id/:slug', variantCtrl.show)
 // edit form of id
 router.get('/:id/edit', variantCtrl.form)
+router.get('/:id/:slug/edit', variantCtrl.form)
 //post to endpoint
 router.post('/', variantCtrl.create)
 //update existing post by id

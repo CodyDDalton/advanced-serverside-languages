@@ -11,6 +11,7 @@ router.get('/:id', productCtrl.show)
 router.get('/:id/:slug', productCtrl.show)
 // edit form of id
 router.get('/:id/edit', productCtrl.form)
+router.get('/:id/:slug/edit', productCtrl.form)
 //post to endpoint
 router.post('/', productCtrl.create)
 //update existing post by id

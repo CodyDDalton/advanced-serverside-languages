@@ -1,6 +1,25 @@
 form{
-    background-color:blue;
-    margin:25%;
+    margin-top:5%;
+    background-color:orangered;
+    color:black;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height:300px;
+    margin-left:35%;
+    margin-right:35%;
+    border-radius: 40px;
+}
+input{
+    font-size:20px;
+    background-color: black;
+    border-radius: 20px;
+    color:antiquewhite;
+    text-align:center;
+}
+label{
+    font-size:20px;
+    padding:5px;
 }
 html{
     text-align:center;
@@ -16,6 +35,26 @@ html{
 .bannerTitle{
     font-size: 48px;
     color:orangered;
+}
+
+.price{
+    max-width:100px;
+    height:10%;
+    text-align:center;
+}
+
+.priceInput{
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    margin-left:35%;
+}
+
+.dollarSign{
+    font-size:24px;
+    margin-right:0%;
+    margin-top:0%;
+
 }
 
 nav{
@@ -78,6 +117,28 @@ a:visited{
     justify-content: space-evenly;
 }
 
+.variantGallery{
+    display:flex;
+    flex-direction: row;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+.variantChoice{
+    border-style:ridge;
+    font-size:16px;
+    border-color:orangered;
+    padding:10px;
+    text-align:center;
+    border-radius:20px;
+    min-width: 150px;
+    max-width: 150px;
+    margin:1%;
+}
+
+.variantPrice{
+    margin-bottom:1%;
+}
 footer{
     position:fixed;
     margin-right:auto;

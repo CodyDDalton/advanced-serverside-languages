@@ -3,20 +3,24 @@
         <input type="hidden" name="id" value="{{ product.id }}">
     {% endif %}
     <div>
-        <label for="title">Title:</label>
+        <label for="title">Title:</label><br />
         <input type="text" name="title" id="title" value="{{ product.title}}">
     </div>
     <div>
-        <label for="slug">Slug:</label>
+        <label for="slug">Slug:</label><br />
         <input type="text" name="slug" id="slug" value="{{ product.slug}}">
     </div>
      <div>
-        <label for="description">Description:</label>
+        <label for="description">Description:</label><br />
         <input type="text" name="description" id="description" value="{{ product.description}}">
     </div>
     <div>
-        <label for="price">Price: $</label>
-        <input type="text" name="price" id="price" type="number" value="{{ product.price}}">
+        <label for="price">Price:</label><br />
+        <div class="priceInput">
+            <p class="dollarSign">$</p>
+            <input type="text" name="price" class="price" id="price" type="number" value="{{ product.price}}">
+        </div>
+        
     </div>
     <div>
         <input type="submit" type="submit" />

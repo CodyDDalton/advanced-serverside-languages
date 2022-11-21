@@ -2,15 +2,14 @@
 
 {% block main_content %}
     <h1>All Variants</h1>
-    <ul>
+    <div class='productContainer'>
         {% for variant in variants %}
-            <li>
-                {{ variant.title }} - 
-                <a href="/variants/{{ variant.id }}/edit">Edit</a>
-                <a href="/variants/{{ variant.id }}/delete">Delete</a>            
-            </li>
+            <a href="/variants/{{variant.productId}}/{{variant.slug}}"><div class="product">
+                    {{ variant.title }}<br />
+                    {{ variant.price}} 
+            </div></a>
         {% endfor %}
-    </ul>
+    </div>
     <p>
         <a href="/variants/new">Create New Variant</a>
     </p>
